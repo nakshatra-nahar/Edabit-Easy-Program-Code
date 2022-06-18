@@ -1,0 +1,26 @@
+// Create a function which validates whether a bridge is safe to walk on (i.e. has no gaps in it to fall through).
+
+#include<iostream>
+using namespace std;
+int isSafeBridge(string bridge){
+    int a;
+    int count=0;
+    a = bridge.length();
+    for (int i=0;i<=a;i++){
+        if(bridge[i]==' '){
+            count = count + 1;
+        }
+    }
+    if(count==0){
+        cout<<"Yes You Can Go";
+    }
+    else{
+        cout<<"No You Cant Go";
+    }
+}
+int main(){
+    string bridge;
+    cout<<"Enter Bridge :- ";
+    getline(cin,bridge);
+    cout<<isSafeBridge(bridge);
+}
