@@ -1,0 +1,16 @@
+// Create a function that returns the string "Burp" with the amount of "r's" determined by the input parameters of the function.
+
+#include <iostream>
+using namespace std;
+int main(){
+    string str;
+    int r;
+    str = "bup";
+    cout<<"Input 'r' :- ";
+    cin>>r;
+    for(int i=1;i<=r;i++){
+        string str1 = "r";
+        cout<<str.insert(2,str1)<<endl;
+    }
+    return 0;
+}
