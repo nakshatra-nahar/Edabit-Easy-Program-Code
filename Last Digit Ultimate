@@ -1,0 +1,28 @@
+// Your job is to create a function, that takes 3 numbers: a, b, c and returns true if the last digit of a * b = the last digit of c. Check the examples below for an explanation.
+
+
+#include <iostream>
+using namespace std;
+int lastDig(int a,int b,int c){
+    int last_digit_a = a%10;
+    int last_digit_b = b%10;
+    int last_digit_c = c%10;
+    if((a*b)%10==last_digit_c){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+int main() {
+    int a,b,c;
+    cout<<"Enter Number 1st :- ";
+    cin>>a ;
+    cout<<"Enter Number 2nd :- ";
+    cin>>b ;
+    cout<<"Enter Number 3rd :- ";
+    cin>>c ;
+    cout<<lastDig(a,b,c);
+    return 0;   
+}
