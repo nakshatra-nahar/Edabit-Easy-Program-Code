@@ -1,0 +1,17 @@
+// Create a function that takes an array of numbers and returns only the even values.
+
+#include <iostream>
+using namespace std;
+int main() {
+    int sample_arr[] ={9,18,12,6,7,54,28};
+    int arrSize = sizeof(sample_arr)/sizeof(sample_arr[0]);
+    cout << "The size of the array is: " << arrSize<<endl; 
+    cout<<"[ ";
+    for(int i=0;i<7;i++){
+        if(sample_arr[i]%2==0){
+            cout<<sample_arr[i]<<" ,";
+        }
+    }
+    cout<<"]";
+    return 0;
+}
